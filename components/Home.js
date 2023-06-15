@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import Pokemon from './Pokemon';
-import styles from '../styles/Home.module.css';
+import { useEffect, useState } from "react";
+import Pokemon from "./Pokemon";
+import styles from "../styles/Home.module.css";
 
 function Home() {
   const [startIndex, setStartIndex] = useState(1);
@@ -40,13 +40,14 @@ function Home() {
     <div className={styles.container}>
       <h1 className={styles.title}>Pokedex</h1>
 
-      <div className={styles.pokemonContainer}>
-        {pokemons}
-      </div>
+      <div className={styles.pokemonContainer}>{pokemons}</div>
 
-      <button onClick={() => fetchPokemons()} className={styles.next}>Next</button>
+      <button onClick={() => fetchPokemons()} className={styles.next}>
+        Next
+      </button>
     </div>
   );
 }
 
 export default Home;
+//test
